@@ -1,0 +1,142 @@
+/*!imports  */
+@font-face {
+    font-family:'Montserrat' ;
+    src: url(./fonts/Montserrat/static/Montserrat-Medium.ttf);
+    font-weight:500 ;
+}
+@font-face {
+    font-family:'Montserrat' ;
+    src: url(./fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight:700 ;
+}
+@font-face {
+    font-family:'Fraunces' ;
+    src: url(./fonts/Fraunces/static/Fraunces_9pt_Soft-Bold.ttf);
+    font-weight: 500;
+}
+/*!reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/*!global  */
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Cream);
+    font-size: 14px;
+    font-family:'Montserrat' ;
+    /* font-family: 'raunces'; */
+    line-height: 1.6;
+}
+
+/*!body  */
+main{
+    background-color: var(--White);
+    height: 60%;
+    width: 80%;
+    margin: 1em auto;
+    border-radius: .625em;
+    -webkit-border-radius: .625em;
+    -moz-border-radius: .625em;
+    -ms-border-radius: .625em;
+    -o-border-radius: .625em;
+}
+.img-1{
+    border-top-left-radius:.625em ;
+    border-top-right-radius: .625em;
+}
+.img-2{
+    display: none;
+}
+section{
+    padding: 1.8em;
+    
+}
+.first-div p{
+    color: var(--Dark-grayish-blue);
+    letter-spacing:.5em ;
+}
+.second-div p{
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+    margin-top: .7em;
+    margin-bottom: .7em;
+}
+.third-div p{
+    font-size: 2em;
+    color: var(--Dark-cyan);
+}
+.third-div del{
+    font-size: .4em;
+    color: var(--Dark-grayish-blue);
+}
+button{
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    margin: 3em auto;
+    padding: .7em ;
+    border: 1px solid transparent;
+    border-radius: .625em;
+    -webkit-border-radius: .625em;
+    -moz-border-radius: .625em;
+    -ms-border-radius: .625em;
+    -o-border-radius: .625em;
+    cursor: pointer;
+}
+.button i{
+    margin-right: 1em;
+}
+/*!media query  */
+@media screen and (min-width:1200px) {
+    main{
+        width: 39%;
+        margin: 7em auto;
+    }
+    .img-1{
+        display: none;
+    }
+    .img-2{
+        display:inline-block ;
+        width: 50%;
+        border-top-left-radius: .625em;
+    }
+    section{
+       float: right;
+       width: 41%;
+       margin-top: 1em;
+       margin-right: 4em;
+    }
+    .first-div h1{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .third-div{
+        margin-top: 2em;
+    }
+    button{
+        width: 100%;
+        padding: 1.5em ;
+        margin-top: 1em;
+        margin-right:2em ;
+    }
+    .second-div p{
+        font-size: 14px;
+    }
+}
